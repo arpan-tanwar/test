@@ -76,7 +76,7 @@ function LeafShape({ position, color, rotation }: {
   )
 }
 
-function BotanicalScene({ isDark }: { isDark: boolean }) {
+function BotanicalScene({ isDark: _isDark }: { isDark: boolean }) {
   return (
     <Canvas
       camera={{ position: [0, 0, 6], fov: 50 }}
