@@ -34,19 +34,4 @@ Output is in `dist/`. Preview with:
 bun run preview
 ```
 
-## Deploy on Netlify
-
-The repo is ready for Netlify:
-
-1. In [Netlify](https://app.netlify.com), click **Add new site** → **Import an existing project**.
-2. Connect your GitHub and select the **test** (or this) repository.
-3. Netlify will use the built-in `netlify.toml`:
-   - **Build command:** `bun run build`
-   - **Publish directory:** `dist`
-   - SPA redirects are configured so routes like `/1`, `/2`, etc. work on first load.
-
-If your site uses **Bun**, ensure the build environment has Bun (e.g. set **Environment** → **Variable** `NPM_FLAGS` or use a Netlify build image that includes Bun). Otherwise you can override the build command in the Netlify UI to `npm run build` and install with npm instead.
-
----
-
 *This project was bootstrapped with React + TypeScript + Vite.*
